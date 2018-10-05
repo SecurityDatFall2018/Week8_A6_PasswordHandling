@@ -1,4 +1,4 @@
-# Week8 Owasp A6 + Password Handling
+# Week8 Owasp A6 + Handling Passwords
 
 This week we will go through two topics:
 
