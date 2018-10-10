@@ -22,7 +22,7 @@ This week we will go through two topics:
 After this lecture you will
 
 * Know how hashing can be used to secure passwords
-* Know different salting strategies.
+* Know different salting and hashing strategies.
 * Know the importance of being slow.
 * Know how to protect secrets in general.
 

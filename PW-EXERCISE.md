@@ -35,13 +35,23 @@ Create a class `MCrypt` that uses the `MDA-256` hashing algorithm instead of `BC
 The signature (for Java) should be:
 ```java
 public class MCrypt {
-    public static String hashpw(String password, String salt) {...}
-    public static boolean checkpw(String candidate, String hash) {...}
-    }
+  public static String hashpw(String password, String salt) {...}
+  public static boolean checkpw(String candidate, String hash) {...}
+  }
 ```
+or in C\#:
+```csharp
+public class MCrypt {
+  public static string HashPassword(string password, string salt) {...}
+  public static bool Verify(string candidate, string hash) {...}
+  }
+```
+
 Output should be Base64 encoded, remember to embed the salt in the result of `hashpw` and to extract it in `checkpw`
 
 Test the class with different passwords.
+
+If you have time, you can implement a `gensalt()` (C\#: `GenerateSalt()`) method as well, that generates random salts. A fixed salt strategy will do ok for the exercise though.
 
 ### Using `BCrypt`
 
