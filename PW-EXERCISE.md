@@ -109,3 +109,6 @@ public class TextFile {
 
   }
 ```
+
+You can also find it at:
+[Week-8-Passwords](https://github.com/SecurityDatFall2018/Week-8-Passwords/tree/master/Hashing.vm)
