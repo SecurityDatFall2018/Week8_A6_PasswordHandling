@@ -71,3 +71,31 @@ Make a brute force attack on the new file using the `candidates.txt` and trying 
 Measure the time.
 
 What would the time be if `13` rounds had been used instead?
+
+### Reading text files in the `resources` folder
+
+Here is a small program you can use to access text files in the `src/main/resources` folder:
+
+```java
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TextFile {
+  private List<String> lines = new ArrayList<>();
+
+  public TextFile(String name) throws FileNotFoundException {
+    ClassLoader cl = getClass().getClassLoader();
+    BufferedReader in = new BufferedReader(
+        new FileReader(new File(cl.getResource(name).getFile()))
+        );
+    in.lines().forEach(line -> lines.add(line));
+    }
+
+  public List<String> getLines() { return lines; }
+
+  }
+```

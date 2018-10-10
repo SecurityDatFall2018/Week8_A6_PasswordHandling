@@ -19,6 +19,13 @@ This week we will go through two topics:
 
 # Password Handling
 
+After this lecture you will
+
+* Know how hashing can be used to secure passwords
+* Know different salting strategies.
+* Know the importance of being slow.
+* Know how to protect secrets in general.
+
 ## Read/Watch
 
 - Watch this [video](https://www.youtube.com/watch?v=O6cmuiTBZVs) to get a bacis idea about handling passwords, and the BCrypt algorithm
