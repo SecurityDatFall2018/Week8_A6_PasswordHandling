@@ -17,8 +17,8 @@ import org.mindrot.jbcrypt.BCrypt;
 
 A C\# project can be setup with:
 ```
-> dotnet new console -o myBCryptProject
-> cd myBCryptProject
+> dotnet new console -o Hashing.net
+> cd Hashing.net
 > dotnet add package BCrypt-Official --version 0.1.109
 ```
 and
