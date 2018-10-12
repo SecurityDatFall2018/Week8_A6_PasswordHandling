@@ -30,7 +30,7 @@ using static BCrypt.Net.BCrypt;
 
 ### Getting started
 
-Create a class `MCrypt` that uses the `MDA-256` hashing algorithm instead of `BCrypt`'s blowfish algorithm.
+Create a class `MCrypt` that uses the `SHA-256` hashing algorithm instead of `BCrypt`'s blowfish algorithm.
 
 The signature (for Java) should be:
 ```java
